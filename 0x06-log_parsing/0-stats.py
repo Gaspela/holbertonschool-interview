@@ -17,8 +17,6 @@ codes = {"200": 0,
          "404": 0,
          "405": 0,
          "500": 0}
-
-
 try:
     for l in sys.stdin:
         data = l.split()
