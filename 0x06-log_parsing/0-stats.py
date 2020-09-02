@@ -34,7 +34,7 @@ try:
                 for sc, v in sorted(codes.items()):
                     if v != 0:
                         print('{}: {}'.format(sc, v))
-                    counter = 0
+                        counter = 0
 
 finally:
     print('File total_size: {}'.format(total_size))
