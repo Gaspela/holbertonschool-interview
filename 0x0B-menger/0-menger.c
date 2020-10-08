@@ -9,7 +9,7 @@ void menger(int level)
 	char s;
 
 	size = pow(3, level);
-    
+
 	for (n = 0; n < size; n++)
 	{
 		for (j = 0; j < size;)
