@@ -5,11 +5,11 @@
 * @size: is the number of element in the array
 * Return: the new node
 */
-avl_t  *binary_tree_node(avl_t  *parent, int size)
+avl_t *binary_tree_node(avl_t *parent, int size)
 {
-	avl_t  *new;
+	avl_t *new;
 
-	new = malloc(sizeof(avl_t ));
+	new = malloc(sizeof(avl_t));
 	if (new == NULL)
 		return (NULL);
 	new->left = NULL;
@@ -29,19 +29,19 @@ avl_t  *binary_tree_node(avl_t  *parent, int size)
 avl_t *insert_node(int *array, size_t start, size_t end, avl_t *parent)
 {
 	avl_t *root;
-	size_t middle ;
+	size_t middle;
 
-	middle  = (start + end) / 2;
-	root = binary_tree_node(parent, array[middle ]);
-    
+	middle = (start + end) / 2;
+	root = binary_tree_node(parent, array[middle]);
+
 	if (root == NULL)
 		return (NULL);
 	if (start > end)
 		return (NULL);
-	if (middle  != start)
-		root->left = insert_node(array, start, middle  - 1, root);
-	if (middle  != end)
-		root->right = insert_node(array, middle  + 1, end, root);
+	if (middle != start)
+		root->left = insert_node(array, start, middle - 1, root);
+	if (middle != end)
+		root->right = insert_node(array, middle + 1, end, root);
 
 	return (root);
 }
