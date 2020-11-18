@@ -2,7 +2,6 @@
 
 const request = require('request');
 
-
 const apiurl = 'https://swapi.dev/api/films/' + process.argv.slice(2) + '/';
 
 request(apiurl, async function (error, response, body) {
