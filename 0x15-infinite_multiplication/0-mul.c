@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * print - entry point
+ * print - print
  * @str: char variable
  * @l: int variable
 */
