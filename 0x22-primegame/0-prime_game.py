@@ -16,7 +16,6 @@ def isWinner(x, nums):
     n = max(nums)
 
     filter = [True for _ in range(max(n + 1, 2))]
-    
     for i in range(2, int(pow(n, 0.5)) + 1):
         if not filter[i]:
             continue
